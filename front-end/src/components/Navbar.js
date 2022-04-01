@@ -32,7 +32,7 @@ useEffect(() => {
       }}>Logout</a>: <NavLink className="item-name" to="/login">Login</NavLink>}
       </div>
         <a className='ham'>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/250px-Hamburger_icon.svg.png"/>
+          <button className='navbar-icon-a'><img src='http://cdn.onlinewebfonts.com/svg/img_422593.png'/></button>
         </a>
       </div>
   )

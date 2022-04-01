@@ -32,8 +32,15 @@ overflow-x: hidden;
     height: 7vh;
     margin-top: 1.5vh;
     margin-right: 5vh;
-
 }
+.navbar-icon-a{
+    background: none;
+    border: none;
+}
+.navbar-icon-a img{
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .item{
         display: none;

@@ -5,7 +5,7 @@ import "./Products.css"
 function Products() {
   const [products, setProducts ] = useState([])
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchCat, setSearchCat] = useState("men's clothing")
+  const [searchCat, setSearchCat] = useState("Electronics")
 
   useEffect(() => {
    fetch("http://localhost:9292/products")
@@ -30,14 +30,6 @@ function Products() {
         onChange={(e)=> setSearchTerm(e.target.value)}
             />
         </form>
-      </div>
-      <div className="items" >
-        <select id="downbar" defaultValue={"men's clothing"} onChange={(e)=> setSearchCat(e.target.value)}>
-          <option value="men's clothing">men's clothing</option> 
-          <option value="jewelery">jewelery</option>
-          <option value="electronics">electronics</option>
-          <option value="women's clothing">women's clothing</option>
-        </select>
       </div>
     </div>
     <ul className='cards'>
